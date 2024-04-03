@@ -223,7 +223,7 @@ nav ul li a:hover::after{
     margin-bottom: 15px;
     font-size: 25px;
     font-weight: 600;
-    color: yellowgreen;
+    color: #ff004f;
 }
 
 .work div:hover{
@@ -308,4 +308,78 @@ form input, form textarea{
     color: greenyellow;
     margin-top: 20px;
     display: block;
+}
+
+/*-------- css for small screen---------*/
+
+nav .fas{
+    display: none;
+}
+@media only screen and (max-width: 600px){
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .subtitle{
+        font-size: 40px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+    .copyright{
+        font-size: 14px;
+    }
+    .buttons button{
+        font-size: 14px;
+        margin-right: 20px;
+    }
+    .buttons{
+        margin-right: 20px;
+    }
+    .fas{
+        float: right;
+
+    }
+
 }
