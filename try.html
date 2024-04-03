@@ -13,13 +13,15 @@
     <div id="header">   
         <div class="container">
             <nav>
-                <ul>
+                <ul id="sidemenu"> 
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav> 
             <div class="header-text">
                 <h1>
@@ -28,7 +30,7 @@
                 <p><span><br> An Emerging SOFTWARE ENGINEER!</span></p>
             </div>   
             <div class="buttons">
-                <a href="/resume Kunal Jalgaonkar.pdf" download target="_blank">
+                <a href="/Kunal mohanJalgaonkar_resume.pdf" download target="_blank">
                 <button>My Resume</button></a>
                 <a href="#contact">
                 <button>Hire Me</button></a>
@@ -40,14 +42,12 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="Kunal.JPG">
+                    <img src="Photo.jpg">
                 </div>
                 <div class="about-col-2">
                     <h1 class="subtitle">About me</h1>
                     <P>
-                       <br>
-                        I am Kunal Jalgaonkar. Currently I am pursuing my masters in Information Technology at Arizona State University. I have completed my Bachelors of Engineering from Dr. D. Y. Patil Institute of Technology, Pune, India specialisation in Electronics and Telecommunications Engineering with an aggregate of 8.77 CGPA. Nevertheless I am a hard working person with the quality of never giving up and that's the reason I did an internship at Disha Computer Institute and Tutedude, after learning programming languages like C, C++, Python, Java Script, Java, HTML/CSS and Data Structure and Algorithms. I am eagerly looking for an opportunity to contribute towards Software Development area. I look forward to collaborate with a team of senior engineer to work on some real time projects while learning the skills from them that are wanting and improving myself professionally. Given an opportunity, I will give all my efforts to work for the betterment of the organisation.
-                    </P>
+                        I'm Kunal Mohan Jalgaonkar, an Information Technology graduate student at Arizona State University, specializing in data analysis and software engineering. With a perfect GPA, I've honed my skills in areas like programming languages (Python, Java, JavaScript), databases (SQL, MongoDB), and tools like Tableau and AWS. My academic journey, coupled with practical experience from internships and projects, has equipped me to excel in diverse roles within the tech industry. As a Teaching Assistant and Software Engineering Intern, I've demonstrated leadership, problem-solving, and cloud technology integration abilities. I'm eager to leverage my expertise to drive innovation and make meaningful contributions in Information Technology. Thank you for considering my profile.                    </P>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -55,51 +55,67 @@
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>Programming Languages</span> <br><br> Python, Java, C, C++</li>
-                            <li><span><br>Web Developtment</span> <br><br> HTML, CSS, JavaScript</li>
-                            <li><span><br>Databases</span> <br><br> SQL, NoSQL, Couchbase</li>
+                            <li><span>Programming Languages : </span> <br><br> Python, Java, C, C++, JavaScript, HTML/CSS, React JS, Angular JS, Node JS, SQL.</li>
+                            <li><span><br>Databases & Tools: </span> <br><br> SQL, Mongo DB, Visual Studio, Eclipse IDE, Anaconda, Tableau, Power BI, Git, MS Excel, MS Word, MySQL, Oracle DB,
+                                MS PowerPoint, Jupyter Notebook.</li>
+                            <li><span><br>Data Mining : </span> <br><br> Python - NumPy, SciPy, Pandas, Matplotlib, Scikit-learn, NLTK, Bokeh, Apache Spark. </li>
+                            <li><span><br>Machine Learning : </span> <br><br> Supervised/Unsupervised Learning, NLP, Model Selection, Classification, Clustering, Regression, Decision Trees, Time-Series
+                                Forecasting, Naïve Bayes. </li>
+                            <li><span><br>Functional Skills :</span> <br><br> Communication Skills, Problem Solving, Analytical Thinking. </li>
+
 
                             
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>April 2022 - July 2022</span> <br><br> Computer Science Teaching Assistant</li>
-                            <li><span><br>November 2020 - January 2021</span> <br><br> Sales and Marketing Intern</li>
+                            <li><span> January 2022 - July 2022</span> <br><br> Software Engineering Intern </li>
+                            <li><span><br>August 2021 - December 2022</span> <br><br> Teaching Assistant</li>
 
                             
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>MS in Information Technology</span> <br><br> Arizona State University</li>
-                            <li><span><br>BE in Electronics and Telecommunication</span> <br><br> Pune University</li>
+                            <li><span>Master of Science in Information Technology</span> <br><br> Arizona State University</li>
+                            <li><span><br>Bachelor of Engineering in Electronics and Telecommunication</span> <br><br> Pune University</li>
                             
                             
                         </ul>
                     </div>
                 </div>
-            </div> 
-        </div> 
-    </div> 
+            </div>
+        </div>
+    </div>
+
+    
     <div id="services">
         <div class="container">
                 <h1 class="subtitle"> <center> Services </h1>
                     <div class="services-list">
                         <div>
-                            <i class="fa-regular fa-terminal"></i>                        
+                            <i class="fa-solid fa-code"></i>                        
                             <h2>Software Development</h2>
-                            <p>I can do programming in languages like C, C++, Python, Java</p>
                         </div>
                         <div>
-                            <i class="fa-solid fa-code"></i>
+                            <i class="far fa-window-maximize"></i>
                             <h2>Web Developtment</h2>
-                            <p>With the use of HTML, CSS, JavaScript I can make a website.</p>
                         </div>
                         <div>
                             <i class="fa-solid fa-database"></i>
                             <h2>Data Analytics</h2>
-                            <p>Dealing with the database is something i like to do.</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-chart-pie"></i>
+                            <h2>Data Visualization</h2>
+                        </div>
+                        <div>
+                            <i class="fas fa-atom"></i>
+                            <h2>Machine Learning</h2>
+                        </div>
+                        <div>
+                            <i class="fas fa-calculator"></i>
+                            <h2>Statistics</h2>
                         </div>
                     </div>    
 
@@ -111,29 +127,45 @@
             <h1 class="subtitle"> <center> My Work </h1>
         <div class="work">    
             <div >
-                <h2>Monitoring of vehicle parameters using Web Application. </h2>
+                <h2>Cryptocurrency Value Prediction</h2>
                 <ul>
-                    <li><p>Designed a system that could display different vehicle parameters.</p></li>
-                    <li><p>Executed my programming skills to present data on the web application using HTML/CSS and JavaScript.</p></li>
-                    <li><p>Collaborated with industry professionals for the implementation of the monitoring system.</p></li>
+                    <li><p>Developed and deployed a cryptocurrency value prediction platform using React JS, Node JS, and MongoDB, integrating Python-based machine learning (utilizing Pandas, NumPy, Scikit-learn) for a 15% accuracy improvement in price forecasts.</p></li>
+                    <li><p>Leveraged AWS and CI/CD for scalable deployment, resulting in a 20% uplift in user investment returns through real-time insights.</p></li>
+                    <li><p>Applied Agile methodologies for rapid iteration based on user feedback, showcasing problem-solving and analytical thinking.</p></li>
                 </ul>
             </div> 
             <div >
                 <h2> Salon Management System. </h2>
                 <ul>
-                    <li><p>Built a web application using ReactJS that increases efficiency by 40%.</p></li>
-                    <li><p>Integrated BackEnd tools like NodeJS and Firebase to storeUser’s information on the WebServer.</p></li>
-                    <li><p>Routed the confirmation message after the customer books an appointment to the users through WBM API.</p></li>
+                    <li><p>Engineered a Salon Management System, streamlining operations for 20+ salons with features for appointment scheduling, customer management, and inventory tracking using Java, HTML/CSS, and MySQL.</p></li>
+                    <li><p>Developed an intuitive dashboard using React JS, improving operational efficiency by 40% through real-time updates on appointments, inventory levels, and staff schedules.</p></li>
+                    <li><p>Implemented a secure login system and data encryption with Node JS, protecting over 5,000 customer records and transactions.</p></li>
                 </ul>
             </div>   
             <div >
-                <h2> Smart Dustbin with Voice Control </h2>
+                <h2> Monitoring of vehicle parameters using Web Application</h2>
                 <ul>
-                    <li><p>Developed a smart device called a smart dustbin which could manage the garbage.</p></li>
-                    <li><p>Implemented the Smart Dustbin using virtual testing software called Proteus.</p></li>
-                    <li><p>Submitted and presented a research paper at The Institution of Electronics and Telecommunication Engineers (IETE) MTS Conference 2021.</p></li>
+                    <li><p>Developed a web application for monitoring vehicle parameters, using JavaScript, HTML/CSS, and Node JS, serving over 1,000 active users with real-time data interaction and analysis.</p></li>
+                    <li><p>Integrated Tableau and Power BI for dynamic data visualization, enabling users to analyze over 500 different vehicle performance metrics.</p></li>
+                    <li><p>Implemented robust data management using SQL and MongoDB, handling over 10,000 data points daily for accurate and timely vehicle monitoring.</p></li>
                 </ul>
             </div>  
+            <div >
+                <h2> Apartment Rental Management System.  </h2>
+                <ul>
+                    <li><p>Developed a comprehensive Apartment Rental Management System to streamline the rental process, enhancing operational efficiency.</p></li>
+                    <li><p>Integrated Relational and NoSQL Databases, combining structured data management with Couchbase NoSQL for effective data analysis.</p></li>
+                    <li><p>Enhanced User Experience by streamlining tasks like application processing, tenant verification, and lease management, optimizing operations.</p></li>
+                </ul>
+            </div>   
+            <div >
+                <h2> Life Expectancy Dashboard.	 </h2>
+                <ul>
+                    <li><p>Developed an interactive Tableau dashboard providing comprehensive insights into life expectancy, health factors, disease prevalence, economic influences, and BMI trends.</p></li>
+                    <li><p>Compiled and cleaned a dataset from the World Health Organization (WHO) and United Nations data repositories, focusing on 193 countries from 2000 to 2015.</p></li>
+                    <li><p>Conducted in-depth data analysis and visualization, revealing correlations and trends in health and societal factors, aiding various stakeholders such as policymakers, researchers, and healthcare providers in making informed decisions.</p></li>
+                </ul>
+            </div>   
         </div>           
         </div>
     </div>  
@@ -203,6 +235,17 @@
             })
             .catch(error => console.error('Error!', error.message))
         })
+      </script>
+
+      <script>
+        var sidemenu = document.getElementById("sidemenu");
+        
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
       </script>
 </body>
 </html>
